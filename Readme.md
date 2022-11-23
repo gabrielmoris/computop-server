@@ -6,6 +6,10 @@
 
 [Computop Node Client](https://www.npmjs.com/package/computop-node-client)
 
+## API call Computop
+
+[Computop API](https://developer.computop.com/display/EN/Create+an+API+call+and+use+Blowfish+encryption)
+
 ---
 
 ### Create a file named ".env" and store your Computop keys like this:
