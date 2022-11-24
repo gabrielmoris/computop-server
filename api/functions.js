@@ -5,11 +5,14 @@ exports.first = (req, res) => {
   try {
     res.json({
       message: "Hello World",
-      encriptedMessage: computop.encryptBlowfish("Hello world"),
+      encriptedMessage:
+        computop.encryptBlowfish("Hello world")
     });
   } catch (e) {
     res.status(400);
-    res.json({ "Error in /": e });
+    res.json({
+      "Error in /": e
+    });
   }
 };
 
@@ -20,7 +23,7 @@ exports.second = (req, res) => {
     if (message) {
       res.json({
         message: message,
-        encriptedMessage: computop.encryptBlowfish(message),
+        encriptedMessage: computop.encryptBlowfish(message)
       });
     } else {
       res.status(400);
@@ -29,7 +32,7 @@ exports.second = (req, res) => {
   } catch {
     res.status(400);
     res.json({
-      "Error in /": "Insert key 'message' (your message)",
+      "Error in /": "Insert key 'message' (your message)"
     });
   }
 };
