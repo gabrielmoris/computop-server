@@ -22,7 +22,7 @@ exports.second = (req, res) => {
   } catch {
     res.status(400);
     res.json({
-      "Error in /": "Insert key 'message' (your message)",
+      "Error in /": "Insert key 'message' (your message)"
     });
   }
 };
